@@ -1,7 +1,14 @@
-@import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
-
 @import "tailwindcss";
+
+@layer utilities {
+  .font-roboto {
+    font-family: var(--font-roboto);
+  }
+  .font-georama {
+    font-family: var(--font-georama);
+  }
+}
 
 html,
 body {
@@ -68,10 +75,10 @@ body {
   }
 
   #welcome {
-    @apply text-gray-200 flex flex-col justify-center items-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 select-none max-sm:h-screen max-sm:w-full max-sm:px-10;
+    @apply text-gray-200 flex flex-col justify-center items-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 select-none w-full px-10;
 
     .small-screen {
-      @apply sm:hidden m-7 bg-red-300/20 backdrop-blur-lg p-3 rounded-md absolute top-10;
+      @apply flex sm:hidden fixed top-10 left-1/2 -translate-x-1/2 w-11/12 max-w-sm bg-red-300/20 backdrop-blur-lg p-3 rounded-md z-50 justify-center;
 
       p {
         @apply flex-1 text-[16px] text-center font-roboto text-gray-400;
@@ -394,13 +401,4 @@ body {
       }
     }
   }
-}
-
-@layer utilities {
-    .font-roboto {
-        font-family: var(--font-roboto);
-    }
-    .font-georama {
-        font-family: var(--font-georama);
-    }
 }
