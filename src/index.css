@@ -3,10 +3,10 @@
 
 @layer utilities {
   .font-roboto {
-    font-family: var(--font-roboto);
+      font-family: var(--font-roboto), serif;
   }
   .font-georama {
-    font-family: var(--font-georama);
+      font-family: var(--font-georama), serif;
   }
 }
 
