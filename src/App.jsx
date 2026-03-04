@@ -1,6 +1,7 @@
 import './App.css'
 import {Dock, Navbar, Welcome} from './components'
-
+import {Draggable} from "gsap/Draggable";
+gsap.registerPlugin(Draggable);
 function App() {
     return (
         <main>
