@@ -1,8 +1,15 @@
+// Packages
 import React from "react";
-import WindowWrapper from "@/hoc/WindowWrapper.jsx";
-import {techStack} from "@/constants/index.js";
 import {Check, Flag} from "lucide-react";
+
+// Components
 import {WindowControls} from "@/components/index.js";
+
+// HOC
+import WindowWrapper from "@/hoc/WindowWrapper.jsx";
+
+// Constants
+import {techStack} from "@/constants/index.js";
 
 export const Terminal = () => {
     return (

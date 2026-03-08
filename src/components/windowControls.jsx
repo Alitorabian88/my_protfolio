@@ -1,4 +1,7 @@
+// Packages
 import React from 'react'
+
+// Store
 import useWindowStore from "@/store/window.js";
 
 export const WindowControls = ({target}) => {
