@@ -3,10 +3,10 @@
 
 @layer utilities {
   .font-roboto {
-      font-family: var(--font-roboto), serif;
+    font-family: var(--font-roboto), serif;
   }
   .font-georama {
-      font-family: var(--font-georama), serif;
+    font-family: var(--font-georama), serif;
   }
 }
 
@@ -123,7 +123,7 @@ body {
   }
 
   #window-header {
-    @apply flex items-center justify-between px-4 py-3 rounded-xl bg-white shadow-2xl drop-shadow-2xl select-none text-sm text-gray-400;
+    @apply flex items-center justify-between px-4 py-3 select-none text-sm text-gray-400;
   }
 
   #safari {
@@ -171,7 +171,7 @@ body {
   }
 
   #terminal {
-    @apply w-xl absolute top-32 left-1/12 overflow-visible;
+    @apply w-xl absolute top-32 left-1/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
 
     h2 {
       @apply font-bold text-sm text-center w-full;
@@ -182,13 +182,23 @@ body {
     @apply text-sm font-roboto p-5;
 
     .label {
-      @apply flex items-center ms-10 mt-7;
+      @apply mb-6 text-black;
+    }
+
+    .table-header {
+      @apply flex items-center pb-2 border-b border-dashed border-gray-400 mb-2 font-medium text-black;
+
+      span:nth-child(1) {
+        @apply w-32 ml-8;
+      }
     }
 
     .content {
-      @apply py-5 my-5 border-y border-dashed space-y-1;
+      @apply py-2 mb-2 border-b border-dashed space-y-0.5;
 
       li {
+        @apply flex items-start;
+
         .check {
           @apply text-[#00A154] w-5;
         }
