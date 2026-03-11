@@ -4,7 +4,7 @@ import gsap from "gsap";
 
 // Components
 import {Dock, Navbar, Welcome} from './components'
-import {Safari, Terminal} from "@/windows";
+import {Resume, Safari, Terminal} from "@/windows";
 
 // Styles
 import './App.css'
@@ -20,6 +20,7 @@ function App() {
 
             <Terminal/>
             <Safari/>
+            <Resume/>
         </main>
     )
 }
