@@ -4,7 +4,7 @@ import gsap from "gsap";
 
 // Components
 import { Dock, Navbar, Welcome } from "./components";
-import { Finder, Resume, Safari, Terminal, Text, Image } from "@/windows";
+import {Finder, Resume, Safari, Terminal, Text, Image, Contact} from "@/windows";
 
 // Styles
 import "./App.css";
@@ -24,6 +24,7 @@ function App() {
       <Finder />
       <Text />
       <Image />
+        <Contact/>
     </main>
   );
 }
