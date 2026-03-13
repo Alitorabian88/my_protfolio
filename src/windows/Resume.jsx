@@ -13,10 +13,8 @@ import {WindowControls} from "@/components/index.js";
 import {Download} from "lucide-react";
 
 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-    'pdfjs-dist/build/pdf.worker.min.mjs',
-    import.meta.url,
-).toString();
+pdfjs.GlobalWorkerOptions.workerSrc = `https:/unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
+
 
 export const Resume = () => {
     return (
